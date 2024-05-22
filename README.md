@@ -1,7 +1,5 @@
 # StyleTransferDemo
 
->**NOTA.** Se puede revisar el código de ejemplo en el REPO: SANDBOX
-
   
 
 ![NuGet Version](https://img.shields.io/nuget/vpre/StyleTransferDemo.Blazor?label=NUGET%20VERSION) ![Github Created At](https://img.shields.io/github/created-at/AlejBlasco/StyleTransferDemo?label=CREATED%20ON) ![GitHub last commit](https://img.shields.io/github/last-commit/AlejBlasco/StyleTransferDemo?label=LAST%20COMMIT)
