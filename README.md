@@ -80,7 +80,7 @@ Nota. Esto también se puede hacer a mano desde la propia web de Nuget
 
 Una vez nuestro paquete haya sido validado lo tendremos disponible para su instalación en otros proyectos.
 
-VER IMAGEN
+![Description](https://github.com/AlejBlasco/StyleTransferDemo/blob/master/res/NuGet%20Gallery_1.png?raw=true)
 
 ### 2. StyleTransferDemo.Demo
 
@@ -112,7 +112,7 @@ Una vez el paquete generado en el anterior proyecto pase a estar disponible, nos
 
 Al terminar la operación podremos ver el paquete correctamente añadido en las dependencias del proyecto.
 
-VER IMAGEN
+![Description](https://github.com/AlejBlasco/StyleTransferDemo/blob/master/res/NuGet%20Add_1.png?raw=true)
 
 #### Utilizar hoja de estilos
 
@@ -139,4 +139,4 @@ Tan solo es necesario añadirla como una stylesheet mas a la página donde quera
 ### Resultado final
 Si se han seguido todos los pasos, al ejecutar el proyecto StyleTransferDemo.Demo en la página de Home veremos el siguiente resultado
 
-VER IMAGEN
+![Description](https://github.com/AlejBlasco/StyleTransferDemo/blob/master/res/Final%20Result_1.png?raw=true)
