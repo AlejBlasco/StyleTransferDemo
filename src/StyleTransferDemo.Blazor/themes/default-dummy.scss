@@ -1,0 +1,8 @@
+﻿@import "components/blazor/_variables.scss";
+
+@import 'bootstrap';
+$bootstrap: true;
+
+/* components */
+@import "components/blazor/_login.scss";
+@import "components/blazor/_clock.scss";

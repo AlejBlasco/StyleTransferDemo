@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<OutputType>Library</OutputType>
+		<!--Package Info-->
+		<IsPackable>true</IsPackable>
+		<PackageId>StyleTransferDemo.Blazor</PackageId>
+		<Product>StyleTransferDemo.Blazor</Product>
+		<Version>2.0.0</Version>
+		<Copyright>ABlasco</Copyright>
+		<Authors>ABlasco</Authors>
+		<Description>Torrezno ipsum dolor amet sebo york cerveza pimentón. Solomillo sal pimentón secreto picadillo manteca soria.</Description>
+		<PackageTags>blazor design components css</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/AlejBlasco</PackageProjectUrl>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Title>Style Transfer Demo </Title>
+		<RepositoryUrl>https://github.com/AlejBlasco/StyleTransferDemo</RepositoryUrl>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DartSassBuilder" Version="1.1.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components" Version="8.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.5" />
+	</ItemGroup>
+
+	<!-- Package files -->
+	<ItemGroup>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="" />
+		<None Include="icon.png" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<DartSassOutputStyle>expanded</DartSassOutputStyle>
+		<EnableDefaultSassItems>false</EnableDefaultSassItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Sass Include="$(MSBuildProjectDirectory)/themes/*.scss" Exclude="$(MSBuildProjectDirectory)/themes/_*.scss" Condition="'$(TargetFramework)' == 'net8.0'" />
+	</ItemGroup>
+
+	<!-- Compile SCSS files into CSS -->
+	<Target Name="CompileGlobalSass" BeforeTargets="Compile">
+		<Message Text="Compiling global SCSS files" Importance="high" />
+		<Exec Command="sass themes/default-dummy.scss wwwroot/css/default-dummy.css --style=compressed --no-source-map" />
+	</Target>
+</Project>

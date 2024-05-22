@@ -1,0 +1,28 @@
+﻿@implements IDisposable
+
+<h3>Current Time: @currentTime.ToString("HH:mm:ss")</h3>
+
+@code {
+    private DateTime currentTime;
+    private Timer timer;
+
+    protected override void OnInitialized()
+    {
+        currentTime = DateTime.Now;
+        timer = new Timer(UpdateClock, null, 0, 1000);
+    }
+
+    private void UpdateClock(object state)
+    {
+        InvokeAsync(() =>
+        {
+            currentTime = DateTime.Now;
+            StateHasChanged();
+        });
+    }
+
+    public void Dispose()
+    {
+        timer?.Dispose();
+    }
+}

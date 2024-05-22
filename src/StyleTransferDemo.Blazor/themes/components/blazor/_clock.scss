@@ -1,0 +1,13 @@
+﻿.clock {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: $navy-blue;
+    background-color: $light-blue;
+    border: 2px solid $blue;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
