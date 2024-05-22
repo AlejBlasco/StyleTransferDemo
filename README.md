@@ -32,31 +32,6 @@ Este proyecto se encarga de:
 
 - Generar un paquete NuGet para facilitar su reutilización en otras aplicaciones.
 
-  
-
-#### Estructura del Proyecto
-
-  
-
-StyleTransferDemo.Blazor
-
-- themes
-
-|- bootstrap
-
-|- components
-
-|- blazor (aquí estan los *.scss)
-
-|- fonts
-
-|- _bootstrap.scss (fichero principal bootstrap)
-
-|- default-dummy.scss (fichero de estilos)
-
-- controls
-
-|- clock.razor (componente Blazor)
 
 #### Generar los estilos en tiempo de compilación
 
@@ -180,35 +155,7 @@ Este proyecto se encarga de:
 
 - Utilizar los controles *.razor generados en el anterior proyecto.
 
-  
-
-#### Estructura del Proyecto
-
-  
-
-StyleTransferDemo.Blazor
-
-- Dependencias
-
-|- Paquetes
-
-|- StyleTransferDemo.Razor (2.x.x)
-
-- controls
-
-|- login.razor (componente Blazor)
-
-- Layout
-
-|- ... (los default de la plantilla WASM)
-
-- Pages
-
-|- Home.razor (default modificada para nuestros ejemplos)
-
-|- ... (las defeult de la plantilla WASM)
-
-  
+   
 
 #### Añadir el paquete NuGet a nuestro proyecto
 
